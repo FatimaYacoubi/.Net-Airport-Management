@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Cipher\\Downloads\\Atelier1\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj",
+      "projectUniqueName": "C:\\Users\\Cipher\\Documents\\GitHub\\.Net-Airport-Management\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj",
       "projectName": "AM.ApplicationCore",
-      "projectPath": "C:\\Users\\Cipher\\Downloads\\Atelier1\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj",
+      "projectPath": "C:\\Users\\Cipher\\Documents\\GitHub\\.Net-Airport-Management\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj",
       "packagesPath": "C:\\Users\\Cipher\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Cipher\\Downloads\\Atelier1\\AirportManagement\\AM.ApplicationCore\\obj\\",
+      "outputPath": "C:\\Users\\Cipher\\Documents\\GitHub\\.Net-Airport-Management\\AirportManagement\\AM.ApplicationCore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Cipher\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -16,7 +16,7 @@ namespace AM.ApplicationCore.Services
             sourcee = source;
             this.showLine = showLine;
         }
-
+        public FlightService() { }
         public void ShowFlights(string filterType, string filterValue)
         {
             showLine($"filterType: {filterType} ,FilterValue: {filterValue}");

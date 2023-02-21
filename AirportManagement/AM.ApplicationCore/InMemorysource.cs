@@ -1,6 +1,5 @@
 ﻿using AM.ApplicationCore.Domain;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +8,7 @@ using System.Threading.Tasks;
 namespace AM.ApplicationCore
 {
     public static class InMemorySource
-    {
+    { //cette classe stocke les donnees 
         public static Plane Boeing1 { get; private set; }
         public static readonly Plane Boeing2 = new Plane(PlaneType.Boeing, 150, new DateTime(2015, 2, 3)) { PlaneId = 2, Flights = new List<Flight> { flight3, flight4 } };
         public static readonly Plane Airbus = new Plane()
@@ -18,7 +17,7 @@ namespace AM.ApplicationCore
             PlaneType = PlaneType.Airbus,
             ManufactureDate = new DateTime(2020, 11, 11),
             Capacity = 250,
-            Flights = new List<Flight> { flight6, flight5 }
+            Flights = new List<Flight> { flight4, flight5 }
 
         };
         static Plane GetFirstPlane()
@@ -36,7 +35,7 @@ namespace AM.ApplicationCore
         {
             FirstName = "captain",
             LastName = "Captain",
-            EmailAddress = "captain@gmail.com",
+            EmailAdress = "captain@gmail.com",
             BirthDate = new DateTime(1965, 01, 01),
             EmployementDate = new DateTime(1999, 01, 01),
             Salary = 10000,
@@ -48,7 +47,7 @@ namespace AM.ApplicationCore
         {
             FirstName = "hostess1",
             LastName = "Hostess1",
-            EmailAddress = "hostess1@gmail.com",
+            EmailAdress = "hostess1@gmail.com",
             BirthDate = new DateTime(1995, 01, 01),
             EmployementDate = new DateTime(2019, 01, 01),
             Salary = 5000,
@@ -59,7 +58,7 @@ namespace AM.ApplicationCore
         {
             FirstName = "hostess2",
             LastName = "Hostess2",
-            EmailAddress = "hostess2@gmail.com",
+            EmailAdress = "hostess2@gmail.com",
             BirthDate = new DateTime(1996, 01, 01),
             EmployementDate = new DateTime(2018, 01, 01),
             Salary = 6100,
@@ -156,7 +155,7 @@ namespace AM.ApplicationCore
         {
             FightId = 4,
             FlightDate = new DateTime(2022, 04, 01, 6, 10, 0),
-            Destination = "Mdrid",
+            Destination = "Madrid",
             EffectiveArrival = new DateTime(2022, 04, 01, 8, 10, 0),
             EstimatedDuration = 2.5f,
             Plane = Boeing2
@@ -165,22 +164,14 @@ namespace AM.ApplicationCore
         {
             FightId = 5,
             FlightDate = new DateTime(2022, 05, 01, 17, 10, 0),
-            Destination = "Mdrid",
+            Destination = "Madrid",
             EffectiveArrival = new DateTime(2022, 05, 01, 19, 10, 0),
             EstimatedDuration = 2.5f,
             Plane = Airbus
         };
-        public static readonly Flight flight6 = new Flight
-        {
-            FightId = 1,
-            FlightDate = new DateTime(2022, 06, 01, 20, 10, 0),
-            Destination = "Paris",
-            EffectiveArrival = new DateTime(2022, 06, 01, 23, 10, 00),
-            EstimatedDuration = 3,
-            Plane = Airbus
-        };
+     
 
-        public static List<Flight> Flights = new List<Flight> { flight1, flight2, flight3, flight4, flight5, flight6 };
+        public static List<Flight> Flights = new List<Flight> { flight1, flight2, flight3, flight4, flight5};
 
 
 

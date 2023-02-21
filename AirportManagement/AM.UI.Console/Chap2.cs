@@ -1,12 +1,5 @@
 ﻿using AM.ApplicationCore;
-using AM.ApplicationCore.Domain;
-using AM.ApplicationCore.Interfaces;
 using AM.ApplicationCore.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AM.UI.Console
 {
@@ -14,13 +7,16 @@ namespace AM.UI.Console
     {
 
         static ShowLine showLine = System.Console.WriteLine;
-      
 
 
         public void Test1()
         {
-            FlightService S = new FlightService(, showLine);
-        
+            FlightService servF = new FlightService();
+            servF.sourcee = InMemorySource.Flights;
+            servF.sourcee("Destination", "Paris");
+            servF.sourcee("Destination", "Madrid");
+            servF.sourcee("Fight id", 3);
+
         }
     }
 }

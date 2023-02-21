@@ -20,7 +20,13 @@ namespace AM.ApplicationCore.Domain
             ManufactureDate = manufactureDate;
             PlaneType = planeType;
         }
-     public Plane() { }
+        public Plane(PlaneType planeType,int capacity, DateTime manufactureDate)
+        {
+            Capacity = capacity;
+            ManufactureDate = manufactureDate;
+            PlaneType = planeType;
+        }
+        public Plane() { }
     }
    
 }
